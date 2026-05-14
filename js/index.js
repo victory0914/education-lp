@@ -2,7 +2,7 @@ document.documentElement.classList.add("is-ready");
 
 const imageExtensions = ["webp", "jpg", "jpeg", "png"];
 const animatedElements = document.querySelectorAll(
-  ".hero-copy, .news-heading, .news-card, .concept-inner, .activity-heading, .activity-card, .movie-heading, .movie-card, .faq-heading, .faq-item, .footer-nav, .footer-logo"
+  ".hero-copy, .news-heading, .news-card, .concept-inner, .activity-heading, .activity-card, .movie-heading, .movie-card, .category-hero, .category-list a, .category-note, .contact-heading, .contact-form, .footer-nav, .footer-logo"
 );
 
 animatedElements.forEach((element, index) => {
