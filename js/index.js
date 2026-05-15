@@ -1,9 +1,49 @@
 document.documentElement.classList.add("is-ready");
 
 const imageExtensions = ["webp", "jpg", "jpeg", "png"];
+const sideNav = document.querySelector(".side-nav");
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileMenuQuery = window.matchMedia("(max-width: 900px)");
 const animatedElements = document.querySelectorAll(
   ".hero-copy, .inquiry-hero-copy, .news-heading, .news-card, .concept-inner, .activity-heading, .activity-card, .movie-heading, .movie-card, .category-hero, .category-list a, .category-note, .category-page-heading, .category-index-panel a, .category-search-card, .contact-heading, .contact-form, .footer-nav, .footer-logo"
 );
+
+const setMenuOpen = (isOpen) => {
+  if (!sideNav || !menuToggle) {
+    return;
+  }
+
+  sideNav.classList.toggle("is-open", isOpen);
+  document.body.classList.toggle("is-menu-open", isOpen);
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
+};
+
+if (sideNav && menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    setMenuOpen(!sideNav.classList.contains("is-open"));
+  });
+
+  sideNav.querySelectorAll(".nav-link, .contact-button").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (mobileMenuQuery.matches) {
+        setMenuOpen(false);
+      }
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMenuOpen(false);
+    }
+  });
+
+  mobileMenuQuery.addEventListener("change", (event) => {
+    if (!event.matches) {
+      setMenuOpen(false);
+    }
+  });
+}
 
 animatedElements.forEach((element, index) => {
   element.dataset.animate = "";
