@@ -1034,6 +1034,67 @@ a {
   background-size: cover;
 }
 
+.inquiry-page {
+  background: #f6fbff;
+}
+
+.inquiry-first-view {
+  align-items: stretch;
+  min-height: 100svh;
+}
+
+.inquiry-page-main {
+  min-width: 0;
+  background: #f6fbff;
+}
+
+.inquiry-hero {
+  position: relative;
+  min-height: clamp(330px, 50svh, 520px);
+  background-image: url("../image/top-background.png");
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.inquiry-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(15, 84, 132, 0.35), rgba(15, 84, 132, 0.04));
+}
+
+.inquiry-hero-copy {
+  position: absolute;
+  left: clamp(22px, 4.8vw, 64px);
+  bottom: clamp(32px, 5vw, 58px);
+  z-index: 1;
+}
+
+.inquiry-hero-copy p,
+.inquiry-hero-copy h1 {
+  display: table;
+  margin: 0;
+  background: var(--panel-blue);
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.2;
+  box-shadow: 0 14px 28px rgba(21, 102, 158, 0.18);
+}
+
+.inquiry-hero-copy p {
+  padding: 7px 12px;
+  font-size: clamp(14px, 1.35vw, 16px);
+  letter-spacing: 0.08em;
+}
+
+.inquiry-hero-copy h1 {
+  margin-top: 12px;
+  padding: 10px 14px 11px;
+  font-size: clamp(31px, 3.05vw, 40px);
+  letter-spacing: 0;
+}
+
 .category-page-heading {
   max-width: 780px;
 }
@@ -1410,6 +1471,14 @@ a {
     #f6fbff;
   padding: clamp(72px, 7vw, 92px) 20px clamp(78px, 7.5vw, 98px);
   overflow: hidden;
+}
+
+.inquiry-contact-section {
+  background:
+    radial-gradient(circle at 8% 12%, rgba(255, 227, 111, 0.28), transparent 25%),
+    radial-gradient(circle at 92% 20%, rgba(66, 200, 170, 0.18), transparent 25%),
+    #f6fbff;
+  padding-top: clamp(52px, 5.5vw, 72px);
 }
 
 .contact-inner {
