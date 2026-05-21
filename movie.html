@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>お問い合わせ | Lancer Education</title>
+    <title>動画で学ぶ | Lancer Education</title>
     <meta
       name="description"
-      content="Lancer Education inquiry page."
+      content="心理職やリハビリ専門職の専門性を、保育実践に役立つ知見として紹介する動画コンテンツページです。"
     >
     <link rel="icon" type="image/png" href="image/logo.png">
     <link rel="apple-touch-icon" href="image/logo.png">
     <link rel="stylesheet" href="css/index.css">
   </head>
-  <body class="inquiry-page">
+  <body class="content-page">
     <main class="page-shell">
-      <section class="first-view inquiry-first-view" aria-label="お問い合わせ">
+      <section class="first-view category-first-view" aria-label="動画で学ぶ">
         <aside class="side-nav" aria-label="サイトナビゲーション">
           <a class="logo" href="index.html#top" aria-label="美樹和ポータルトップへ戻る">
             <img src="image/logo.png" alt="" width="44" height="44">
@@ -40,7 +40,7 @@
               <img src="image/icon-search.png" alt="" width="48" height="48">
               <span>現場を知る</span>
             </a>
-            <a class="nav-link" href="movie.html">
+            <a class="nav-link" href="movie.html" aria-current="page">
               <img src="image/icon-table.png" alt="" width="48" height="48">
               <span>動画で学ぶ</span>
             </a>
@@ -54,74 +54,39 @@
             </a>
           </nav>
 
-          <a class="contact-button" href="inquiry.html" aria-current="page">
+          <a class="contact-button" href="inquiry.html">
             <span aria-hidden="true">□</span>
             お問い合わせ
           </a>
         </aside>
 
-        <div class="inquiry-page-main">
-          <div class="inquiry-hero" role="img" aria-label="美樹和ポータルのファーストビュー画像">
-            <div class="inquiry-hero-copy">
-              <p>CONTACT</p>
-              <h1>お問い合わせ</h1>
+        <div class="content-page-main">
+          <header class="content-page-heading">
+            <div class="category-title-group">
+              <img src="image/icon-table.png" alt="" width="48" height="48">
+              <p>動画で学ぶ</p>
             </div>
-          </div>
+            <h1>専門性を保育実践に活かす</h1>
+            <p class="content-page-lead">
+              心理職やリハビリ専門職を配置することで、保育現場にどのような知見を加えることができるのかを学ぶコンテンツです。
+            </p>
+          </header>
 
-          <section class="contact-section inquiry-contact-section" aria-labelledby="contact-title">
-            <div class="contact-inner">
-              <header class="contact-heading">
-                <h2 id="contact-title">お問い合わせ</h2>
-                <p>ご相談・お申し込み内容を確認のうえ、5日以内に事務局よりご連絡いたします。</p>
-              </header>
-
-              <form class="contact-form" action="https://formsubmit.co/tomohhu0@gmail.com" method="POST">
-                <input type="hidden" name="_cc" value="migiwa-portal@gmail.com">
-                <input type="hidden" name="_subject" value="美樹和ポータルへのお問い合わせ">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_autoresponse" value="このたびは美樹和ポータルへお問い合わせいただき、誠にありがとうございます。申込完了の自動返信メールとして、本メールをお送りしております。内容を確認のうえ、5日以内に何らかのご連絡を差し上げます。これらのメールの確認ができない場合は、お手数ですが事務局までメールにてご連絡ください。">
-                <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off">
-
-                <div class="form-grid">
-                  <label>
-                    <span>お名前＊</span>
-                    <input type="text" name="お名前" autocomplete="name" required>
-                  </label>
-
-                  <label>
-                    <span>ふりがな＊</span>
-                    <input type="text" name="ふりがな" required>
-                  </label>
-
-                  <label>
-                    <span>法人名・団体名</span>
-                    <input type="text" name="法人名・団体名" autocomplete="organization">
-                  </label>
-
-                  <label>
-                    <span>メールアドレス＊</span>
-                    <input type="email" name="email" autocomplete="email" required>
-                  </label>
-
-                  <label>
-                    <span>TEL</span>
-                    <input type="tel" name="TEL" autocomplete="tel">
-                  </label>
-                </div>
-
-                <label class="form-message">
-                  <span>問合せ内容＊</span>
-                  <textarea name="問合せ内容" rows="7" required></textarea>
-                </label>
-
-                <p class="form-note">
-                  申込完了後、自動返信メールをお送りします。確認できない場合は、お手数ですが事務局までメールにてご連絡ください。
+          <div class="content-section-list">
+            <section class="content-panel" aria-labelledby="useful-title">
+              <div class="content-panel-body">
+                <p class="content-panel-kicker">LEARNING CONTENTS</p>
+                <h2 id="useful-title">お役立ちコンテンツ</h2>
+                <p>
+                  心理職やリハビリ専門職を配置することで、保育現場にどのような知見を加えることができるのでしょうか。本コンテンツでは、心理職やリハビリ専門職の専門性について、保育実践に役立つ知見を紹介します。
                 </p>
-
-                <button class="form-submit" type="submit">送信する</button>
-              </form>
-            </div>
-          </section>
+                <div class="empty-state">
+                  <strong>現在、動画コンテンツは準備中です。</strong>
+                  <span>公開予定の動画や資料が整い次第、テーマ別に掲載します。</span>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </section>
     </main>
@@ -142,9 +107,9 @@
             <a href="index.html#top">TOP</a>
             <a href="activity.html">活動する</a>
             <a href="field.html">現場を知る</a>
-            <a href="movie.html">動画で学ぶ</a>
+            <a href="movie.html" aria-current="page">動画で学ぶ</a>
             <a href="category.html">カテゴリー検索</a>
-            <a href="inquiry.html" aria-current="page">お問い合わせ</a>
+            <a href="inquiry.html">お問い合わせ</a>
           </nav>
 
           <div class="footer-office" aria-label="事務局情報">

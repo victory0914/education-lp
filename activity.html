@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>お問い合わせ | Lancer Education</title>
+    <title>活動する | Lancer Education</title>
     <meta
       name="description"
-      content="Lancer Education inquiry page."
+      content="保育所で働く専門職プラットフォームの活動案内ページです。定期ミーティングや活動報告について紹介します。"
     >
     <link rel="icon" type="image/png" href="image/logo.png">
     <link rel="apple-touch-icon" href="image/logo.png">
     <link rel="stylesheet" href="css/index.css">
   </head>
-  <body class="inquiry-page">
+  <body class="content-page">
     <main class="page-shell">
-      <section class="first-view inquiry-first-view" aria-label="お問い合わせ">
+      <section class="first-view category-first-view" aria-label="活動する">
         <aside class="side-nav" aria-label="サイトナビゲーション">
           <a class="logo" href="index.html#top" aria-label="美樹和ポータルトップへ戻る">
             <img src="image/logo.png" alt="" width="44" height="44">
@@ -32,7 +32,7 @@
               <img src="image/icon-pc.png" alt="" width="48" height="48">
               <span>TOP</span>
             </a>
-            <a class="nav-link" href="activity.html">
+            <a class="nav-link" href="activity.html" aria-current="page">
               <img src="image/icon-earth.png" alt="" width="48" height="48">
               <span>活動する</span>
             </a>
@@ -54,74 +54,60 @@
             </a>
           </nav>
 
-          <a class="contact-button" href="inquiry.html" aria-current="page">
+          <a class="contact-button" href="inquiry.html">
             <span aria-hidden="true">□</span>
             お問い合わせ
           </a>
         </aside>
 
-        <div class="inquiry-page-main">
-          <div class="inquiry-hero" role="img" aria-label="美樹和ポータルのファーストビュー画像">
-            <div class="inquiry-hero-copy">
-              <p>CONTACT</p>
-              <h1>お問い合わせ</h1>
+        <div class="content-page-main">
+          <header class="content-page-heading">
+            <div class="category-title-group">
+              <img src="image/icon-earth.png" alt="" width="48" height="48">
+              <p>活動する</p>
             </div>
-          </div>
+            <h1>実践を共有し、学び合う</h1>
+            <p class="content-page-lead">
+              保育現場で働く専門職同士がつながり、それぞれの専門性の活かし方や保育士との連携について実践的に考える場を紹介します。
+            </p>
+          </header>
 
-          <section class="contact-section inquiry-contact-section" aria-labelledby="contact-title">
-            <div class="contact-inner">
-              <header class="contact-heading">
-                <h2 id="contact-title">お問い合わせ</h2>
-                <p>ご相談・お申し込み内容を確認のうえ、5日以内に事務局よりご連絡いたします。</p>
-              </header>
-
-              <form class="contact-form" action="https://formsubmit.co/tomohhu0@gmail.com" method="POST">
-                <input type="hidden" name="_cc" value="migiwa-portal@gmail.com">
-                <input type="hidden" name="_subject" value="美樹和ポータルへのお問い合わせ">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_autoresponse" value="このたびは美樹和ポータルへお問い合わせいただき、誠にありがとうございます。申込完了の自動返信メールとして、本メールをお送りしております。内容を確認のうえ、5日以内に何らかのご連絡を差し上げます。これらのメールの確認ができない場合は、お手数ですが事務局までメールにてご連絡ください。">
-                <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off">
-
-                <div class="form-grid">
-                  <label>
-                    <span>お名前＊</span>
-                    <input type="text" name="お名前" autocomplete="name" required>
-                  </label>
-
-                  <label>
-                    <span>ふりがな＊</span>
-                    <input type="text" name="ふりがな" required>
-                  </label>
-
-                  <label>
-                    <span>法人名・団体名</span>
-                    <input type="text" name="法人名・団体名" autocomplete="organization">
-                  </label>
-
-                  <label>
-                    <span>メールアドレス＊</span>
-                    <input type="email" name="email" autocomplete="email" required>
-                  </label>
-
-                  <label>
-                    <span>TEL</span>
-                    <input type="tel" name="TEL" autocomplete="tel">
-                  </label>
-                </div>
-
-                <label class="form-message">
-                  <span>問合せ内容＊</span>
-                  <textarea name="問合せ内容" rows="7" required></textarea>
-                </label>
-
-                <p class="form-note">
-                  申込完了後、自動返信メールをお送りします。確認できない場合は、お手数ですが事務局までメールにてご連絡ください。
+          <div class="content-section-list">
+            <section class="content-panel" aria-labelledby="meeting-title">
+              <div class="content-panel-body">
+                <p class="content-panel-kicker">REGULAR MEETING</p>
+                <h2 id="meeting-title">定期ミーティング</h2>
+                <p>
+                  オンラインにて、「実践共有ミーティング」を開催しています。
+                </p>
+                <p>
+                  「保育現場で自分の専門性をどのように活かせばよいかわからない」「保育士とどのように連携すればよいのか悩んでいる」「他園ではどのような実践が行われているのか知りたい」といった悩みや実践を共有しながら、学び合う場を目指しています。
+                </p>
+                <p>
+                  月1回のミーティングでは、事例紹介や情報交換を通して、保育現場における専門職の役割や、多職種連携のあり方について実践的な対話を行っています。また、専門職の配置や連携について関心のある施設長・保育士等の参加も歓迎しています。
+                </p>
+                <p class="content-note">
+                  参加を希望する場合は、<a href="https://www.migiwahoikuen.com/top/top.php" target="_blank" rel="noopener noreferrer">事務局の運営情報ページ</a>をご確認のうえご連絡ください。
                 </p>
 
-                <button class="form-submit" type="submit">送信する</button>
-              </form>
-            </div>
-          </section>
+                <div class="photo-placeholder-grid" aria-label="写真掲載予定エリア">
+                  <div class="photo-placeholder">写真掲載予定</div>
+                  <div class="photo-placeholder">活動風景掲載予定</div>
+                </div>
+              </div>
+            </section>
+
+            <section class="content-panel" aria-labelledby="activity-report-title">
+              <div class="content-panel-body">
+                <p class="content-panel-kicker">REPORT</p>
+                <h2 id="activity-report-title">活動報告</h2>
+                <div class="empty-state">
+                  <strong>現在、掲載できる活動報告はありません。</strong>
+                  <span>定期ミーティングや実践共有の記録は、準備が整い次第こちらに掲載します。</span>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </section>
     </main>
@@ -140,11 +126,11 @@
         <div class="footer-content">
           <nav class="footer-nav" aria-label="フッターナビゲーション">
             <a href="index.html#top">TOP</a>
-            <a href="activity.html">活動する</a>
+            <a href="activity.html" aria-current="page">活動する</a>
             <a href="field.html">現場を知る</a>
             <a href="movie.html">動画で学ぶ</a>
             <a href="category.html">カテゴリー検索</a>
-            <a href="inquiry.html" aria-current="page">お問い合わせ</a>
+            <a href="inquiry.html">お問い合わせ</a>
           </nav>
 
           <div class="footer-office" aria-label="事務局情報">

@@ -5,7 +5,7 @@ const sideNav = document.querySelector(".side-nav");
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileMenuQuery = window.matchMedia("(max-width: 900px)");
 const animatedElements = document.querySelectorAll(
-  ".hero-copy, .inquiry-hero-copy, .news-heading, .news-card, .concept-inner, .activity-heading, .activity-card, .movie-heading, .movie-card, .category-hero, .category-list a, .category-note, .category-page-heading, .category-index-panel a, .category-search-card, .contact-heading, .contact-form, .footer-nav, .footer-logo"
+  ".hero-copy, .inquiry-hero-copy, .news-heading, .news-card, .concept-inner, .activity-heading, .activity-card, .movie-heading, .movie-card, .category-hero, .category-list a, .category-note, .category-page-heading, .category-index-panel a, .category-search-card, .content-page-heading, .content-panel, .contact-heading, .contact-form, .footer-nav, .footer-logo"
 );
 
 const setMenuOpen = (isOpen) => {
